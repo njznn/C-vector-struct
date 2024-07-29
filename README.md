@@ -1,4 +1,4 @@
-# C-Vector-Struct
+# C Vector 
 
 This is an implementation of a dynamic vector structure in C. 
 
@@ -35,10 +35,17 @@ int main() {
     print_vector(&v);
     vec_delete(&v);
 
-    // Vector of doubles:
+    //vector of doubles:
     vector v1;
     vec_init(&v1, 6, sizeof(double));
-    vec_push_back(&v1, (double[]){1, 2, 3, 4, 
+    vec_push_back(&v1, &(double[]){1,2,3,4,5}, 5);
+    vec_insert(&v1, 0, &(double[]){7,6},3);
+    print_vector(&v1);
+    vec_delete(&v1);
+
+
+    return 0;
+}
 
 ```
 It is possible to add to vector temporary types, which is closest to rvalues. Strings are always added as array of pointers to strings, even if only one is added.
