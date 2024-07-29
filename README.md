@@ -48,8 +48,11 @@ int main() {
 }
 
 ```
-It is possible to add to vector temporary types, which is closest to rvalues. Strings are always added as array of pointers to strings, even if only one is added.
+### Notes
 
+- **Temporary Types**: It is possible to add temporary types to the vector, similar to rvalues in C++. This allows for flexible handling of various types of data during insertion.
+  
+- **String Handling**: Strings are always added as an array of pointers to strings, even if only one string is added. This approach ensures consistent memory management and avoids issues with null-terminated strings.
 
 
 
