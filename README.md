@@ -1,6 +1,6 @@
 # C-Vector-Struct
 
-This is an implementation of a dynamic vector structure in C. To use it, include the `vector.h` header file in your project.
+This is an implementation of a dynamic vector structure in C. 
 
 ## Features
 - Dynamic resizing of vectors.
